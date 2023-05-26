@@ -140,14 +140,14 @@ h2 {
   transition: all 1s;
 }
 
-@media only screen and (min-width: 1550px) {
+@media only screen and (min-width: 1445px) {
   .card {
     background-repeat: no-repeat;
     background-size: 90% 100%;
     background: var(--color-background-card) url(../images/bg-desktop.svg);
     grid-template-columns: repeat(2, 45rem);
     grid-template-rows: 50rem;
-    padding-left: 4rem;
+    /* padding-left: 4rem; */
   }
 
   .card__background--mobile {
@@ -162,20 +162,21 @@ h2 {
     height: 2.5rem;
     left: -6%;
     margin-bottom: 3.5rem;
-    margin-top: 2.3875rem;
     margin-top: 4rem;
     position: relative;
     width: 15rem;
+    margin-left: 4rem;
   }
 
   .card__mockup {
     height: 33rem;
     width: 46rem;
+    margin-left: 4rem;
   }
 
   .content__container {
     align-items: flex-start;
-    margin-left: 4.5rem;
+    margin-left: 7rem;
     margin-right: 5.3125rem;
     margin-top: 14.5rem;
     text-align: left;
@@ -209,7 +210,7 @@ h2 {
   .media__container {
     justify-content: flex-end;
     margin-top: 0;
-    padding-right: 2.5rem;
+    padding-right: 1rem;
     width: 100%;
   }
 
