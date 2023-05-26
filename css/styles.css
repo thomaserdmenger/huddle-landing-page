@@ -11,10 +11,10 @@
 }
 
 body {
-  display: grid;
   font-family: 'Open Sans', sans-serif;
   min-height: 100vh;
-  place-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 h1,
@@ -26,6 +26,11 @@ p {
 h1,
 h2 {
   font-family: 'Poppins', sans-serif;
+}
+
+main {
+  display: grid;
+  place-items: center;
 }
 
 .card {
@@ -141,13 +146,23 @@ h2 {
 }
 
 @media only screen and (min-width: 1440px) {
-  .card {
+  main {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--color-background-card);
+    display: flex;
+    justify-content: center;
     background-repeat: no-repeat;
+    display: grid;
+    place-items: start;
+  }
+
+  .card {
     background-size: 90% 100%;
-    background: var(--color-background-card) url(../images/bg-desktop.svg);
+    background: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat no-repeat;
     grid-template-columns: repeat(2, 45rem);
     grid-template-rows: 50rem;
-    /* padding-left: 4rem; */
   }
 
   .card__background--mobile {
