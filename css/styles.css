@@ -136,6 +136,8 @@ h2 {
 .media__item-container:hover {
   transform: scale(1.2);
   transition: all 1s;
+  color: #ff52c1;
+  border-color: #ff52c1;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -145,9 +147,73 @@ h2 {
     background: var(--color-background-card) url(../images/bg-desktop.svg);
     background-repeat: no-repeat;
     background-size: 90% 100%;
+    padding-left: 4rem;
   }
 
   .card__background--mobile {
     background: none;
+  }
+
+  .card__container-top {
+    padding: 0;
+  }
+
+  .card__logo {
+    width: 15rem;
+    height: 2.5rem;
+    margin-top: 2.3875rem;
+    margin-top: 4rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+    left: -6%;
+  }
+
+  .card__mockup {
+    width: 46rem;
+    height: 33rem;
+  }
+
+  .content__container {
+    margin-right: 5.3125rem;
+    margin-left: 4.5rem;
+    margin-top: 14.5rem;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .content__heading {
+    font-size: 2.5rem;
+    width: 100%;
+    line-height: 3.75rem;
+    padding-right: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .content__text {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    font-weight: 400;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    padding-right: 3rem;
+  }
+
+  .content__button {
+    width: 12.5rem;
+    height: 3.5rem;
+    border-radius: 1.75rem;
+    margin-bottom: 11.4375rem;
+    font-size: 1.125rem;
+  }
+
+  .media__container {
+    margin-top: 0;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 2.5rem;
+  }
+
+  .media__item-container {
+    margin-left: 1rem;
   }
 }
