@@ -140,7 +140,7 @@ h2 {
   transition: all 1s;
 }
 
-@media only screen and (min-width: 1445px) {
+@media only screen and (min-width: 1440px) {
   .card {
     background-repeat: no-repeat;
     background-size: 90% 100%;
