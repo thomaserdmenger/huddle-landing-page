@@ -1,4 +1,7 @@
 :root {
+  --color-background-card: #684bb1;
+  --color-text: #ffffff;
+  --color-hover: #e880e8;
 }
 
 *,
@@ -10,6 +13,8 @@
 body {
   min-height: 100vh;
   font-family: 'Open Sans', sans-serif;
+  display: grid;
+  place-items: center;
 }
 
 h1,
@@ -21,4 +26,128 @@ p {
 h1,
 h2 {
   font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 23.4375rem;
+  grid-template-rows: repeat(2, 25rem);
+  background-color: var(--color-background-card);
+}
+
+.card__background--mobile {
+  background: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.card__background--desktop {
+  background: none;
+}
+
+.card__container-top {
+  padding-left: 2.5rem;
+  padding-right: 2.4375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card__logo {
+  width: 7.5rem;
+  height: 2rem;
+  margin-top: 2.3875rem;
+  margin-bottom: 3.5rem;
+}
+
+.card__mockup {
+  width: 100%;
+}
+
+.content__container {
+  margin-left: 2.25rem;
+  margin-right: 2.1875rem;
+  color: var(--color-text);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content__heading {
+  font-size: 1.5rem;
+  width: 17.5rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.content__text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  padding: 0 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.content__button {
+  width: 12.5rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  background-color: var(--color-text);
+  outline: none;
+  border: none;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: var(--color-background-card);
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  cursor: pointer;
+}
+
+.content__button:hover {
+  background-color: var(--color-hover);
+  color: var(--color-text);
+  transition: all 1s;
+}
+
+.media__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 6.5rem;
+  margin-top: 4rem;
+}
+
+.media__item-container {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--color-text);
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.media__item-container:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+@media only screen and (min-width: 1440px) {
+  .card {
+    grid-template-rows: 50rem;
+    grid-template-columns: repeat(2, 45rem);
+    background: var(--color-background-card) url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+  }
+
+  .card__background--mobile {
+    background: none;
+  }
 }
